@@ -31,3 +31,12 @@ const reducer = (state = [], action) => {
     }
     return state; // otherwise, just return the original state
 }
+
+In order to feed the action into the reducer, we have to 'dispatch' it.
+store.dispatch(action);
+
+Big rule of reducers: whenever we change make a change, we must return a completely new object or array, so that we do not mutate our existing state data.
+e.g.: bad => state.push(action.payload), good => return [ ...state, action.payload ];
+
+What is the point of Redux? Why go through the setup trouble?
+As Stephen Grider says, "Redux is one of the best libraries in existence for scaling an application to be very large with the least amount of code complexity." This claim is grounded in Redux's action system, which allows us to make predictable changes to the app's state, so that we never have to mess around with data directly in the store. This preserves data integrity and ease-of-use at scale.
