@@ -17,3 +17,14 @@
 ##### Dedicated forum
 - https://forum.stationx.net
 
+## Threat landscape
+
+##### Assets
+- privacy (content) vs anonymity (identity) vs pseudonymity (alias)
+- http filter, patching, vpn, ssh, https, openpgp, firewall, ssl/tls, 2fa…
+##### Threats and Adversaries
+- mass surveillance, malware, viruses, rootkits, vishing, phishing
+- hackers, spies, oppressive regimes, colleagues
+##### Risk = vulnerabilities * threats * consequences
+- Security is the combination of technology, process, and most importantly your actions
+
