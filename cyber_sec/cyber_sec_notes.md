@@ -28,3 +28,35 @@
 ##### Risk = vulnerabilities * threats * consequences
 - Security is the combination of technology, process, and most importantly your actions
 
+## Risk Assessment 
+- Balance between risk and opportunity, fit your security to your needs
+
+##### 100% Security
+- impossible unless you stop the activity. Decide your personal risk tolerance
+    - Concentrate on consequences to choose your course of action
+    - Select > Implement > Assess > Monitor
+- Security vs Privacy vs Anonymity; can battle each other. Can’t have it all.
+
+##### Defense in depth – layered defense.
+- Prevention (encryption) > Detect (canary, etc) > Recover (backup)
+- What you cannot prevent you detect, what you can’t detect, you recover
+
+##### Zero Trust model
+- the less you trust, the lower you risk. Including yourself.
+- Evaluate and distribute trust to mitigate risk.
+- Ex: store files online – trust dropbox?
+- Distribute trust by backing up your files elsewhere
+    - Zero knowledge system – provider has no knowledge of your file contents (ex: swedish banking in American cinema)
+        - Don’t trust them either, as part of the zero-trust model
+
+##### APT (advanced persistent threat) 
+- when you are personally being targeted
+- $445,000,000,000 stolen annually via cyber crime
+- Web hosting, email attacks, virtual goods, reputation hijacking, bot activity, blackmail, account/financial credentials sold, id theft, cyptocurrency
+
+##### Security Bugs 
+- ex: heartbleed bug to steal bank logins. Exist everywhere.
+- Known vs unknown bugs
+    - Known bugs have patches. Patched systems are safe against patch bugs.
+    - Unknown bugs, aka “zero days.” No patches.
+        - Compensating control used against them
