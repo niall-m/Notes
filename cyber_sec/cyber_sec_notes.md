@@ -60,3 +60,15 @@
     - Known bugs have patches. Patched systems are safe against patch bugs.
     - Unknown bugs, aka “zero days.” No patches.
         - Compensating control used against them
+
+## Current landscape
+
+##### Hackers, Crackers & Cyber Criminals
+- Ethical hackers (white hat)
+- malicious hackers (black hat)
+- mercenaries (red hat)
+- hacking collectives
+- lone wolfs
+- script kitties
+    - noobs that use code other hackers have written
+        - 95% of hackers
