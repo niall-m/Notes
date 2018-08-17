@@ -72,3 +72,68 @@
 - script kitties
     - noobs that use code other hackers have written
         - 95% of hackers
+
+## Malware
+- Macro Virus 
+    - macro language = platform independent
+- Stealth Virus
+    - hides modifications it’s made. 
+    - Intercepts requests, provides false info
+- Polymorphic Virus 
+    - provides varied operational copies, unidentical between infections
+- Self-garbling Virus 
+    - modifies its code to avoid detection
+- Bots & Zombies 
+    - collection of devices under control of a hacker network
+- Worms 
+    - viruses that spread
+- OS Rootkits (worst software) 
+    - embedded into OS kernel
+- Firmware Rootkit (worst of all)
+    - in harddrive firmware chip
+    - reinstalling OS/reformatting drive won’t address
+    - NSA level malware
+- Key loggers
+    - log your keystrokes
+- Trojan horses
+    - programs that appear as one thing, actually malware
+- RAT (remote access tools) 
+    - allow remote administration control
+        - Hayvix, alien spy, comrat, etc
+- Ransomware 
+    - malware that takes control of your pc, encrypts your personal files
+        - Cryptowall, ctb-locker, torrent-locker prevalent. Pay to get your stuff back or lose files.
+- Malvertisement 
+    - infected ads. Hackers pay to place ads on normal sites like yahoo
+- Drive-by Attack 
+    - visiting a website that contains code to exploit your machine
+- Spyware
+    - gathers info to compromise you
+- Adware
+    - undesirable software that forces advertisement on you
+        - Ex: Browser hijacking (coolwebsearch)
+        - Be careful of optional installations during downloads – use optimal
+        - Ex: Lenovo laptops pre-installed with superphish adware & encryption bypass
+            - So never buy Lenovo
+- Scareware 
+    - tricks people into believing in a threat that doesn’t exist. 
+        - Ex: fake antivirus
+- PUPs
+    - Potentially Unwanted Programs, often bundled in with install
+    - bloatware
+- Phishing 
+    - most successful, cheapest. 
+    - Don’t click on things you shouldn’t
+        - Fake emails, IMs, Subdomains, misspelt domains, subdirectories, hidden URLs
+        - Real domains are to the left of the HLD (high level domain (.com)) without “/” to the left. The “/” indicates it is actually a subdomain
+    - Real urls that take you to compromised but trusted sites
+    - Open redirect, (reflected) cross-site scripting, cross-site request forgery
+- Vishing 
+    - phone or “voice” phishing
+- SMShing 
+    - text phishing
+- Spamming 
+    - be suspicious of anything you didn’t request
+- Doxing 
+    - “document” abbreviation 
+    - make private info public to coerce, embarrass, blackmail, threaten, etc
