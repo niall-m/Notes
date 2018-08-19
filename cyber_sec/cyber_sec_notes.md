@@ -137,3 +137,20 @@
 - Doxing 
     - “document” abbreviation 
     - make private info public to coerce, embarrass, blackmail, threaten, etc
+
+## Social engineering attacks
+- check on ConsumerFraudReporting.org, actionfraud.police.uk
+- Internet merchant scams, goods defective/not delivered
+- Phishing
+- Fake prizes, free gifts, lottery scams (asks for upfront fees “advanced fee fraud”)
+- Fake check payments
+- Recovery and refund companies
+- Computer performance scams
+- Scholarship, student loan, financial aid scams
+- Online dating scams 
+    - catfishing, etc
+- Facebook fake friend scam
+- Ebay scams 
+    - posing as buyers, coerce sellers to ship goods before payment
+    - Usually receive fake payment confirmation payment
+
