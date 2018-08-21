@@ -154,3 +154,19 @@
     - posing as buyers, coerce sellers to ship goods before payment
     - Usually receive fake payment confirmation payment
 
+## Darknet “Darkweb” 
+###### only accessible with specific ports, software, protocols, authorization
+
+- “surfaceweb” is the normal web everyone knows
+- Used by gov’t, militaries, companies, anyone who needs privacy (including criminals)
+- Tool to maintain anonymity, and in some sense security
+- Retroshare 
+    - pier to pier or friend-to-friend networks
+- Tor, I2P anonymous, gnunet, freenet project, etc
+    - Can be de-anonymized, be careful
+- Exploit kits – growing prices/demand
+    - Bought kits to hack computers, install Rats, etc. 
+    - Mostly noobs hacking now.
+        - Snakerat
+    - Zero-Day Vulnerabilities (very deadly)
+        - Vulnerabilities that have zero patches, very expensive
