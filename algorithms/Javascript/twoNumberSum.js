@@ -11,3 +11,18 @@ function twoNumberSum(array, targetSum) {
 	}
 	return [];
 }
+
+// using a hash: O(n) time | O(n) space
+function twoSumNumbers(array, targetSum) {
+	let nums = {};
+	for (let i = 0; i < array.length; i++) {
+		let currentNum = array[i];
+		let potentialMatch = targetSum - currentNum;
+		if (nums[potentialMatch]) {
+			return [potentialMatch, currentNum].sort((a, b) => a - b);
+		} else {
+			nums[currentNum] = true;
+		}
+	}
+	return [];
+}
