@@ -170,3 +170,40 @@
         - Snakerat
     - Zero-Day Vulnerabilities (very deadly)
         - Vulnerabilities that have zero patches, very expensive
+
+## Gov’t, spies
+##### Mass surveillance
+- many countries spy on each other’s citizens to avoid breaking their own laws
+    - “Five Eyes” – Australia, Canada, New Zealand, UK, USA collectively share info
+    - “Nine Eyes” – Denmark, France, Netherlands, Norway
+    - “14 Eyes” – Belgium, Germany, Italy, Spain, Sweden
+    - Ex: Carnivore, echelon, narrow sinsite
+        - listen to your convos
+        - voice recognition
+        - sensor web pages
+        - track via GPS
+        - read your communications
+        - change email content while en-route
+        - secretly turn on webcams or microphones
+    - Utah data center, up to 1.5 million sq/ft storage
+    
+##### Active surveillance
+- installed via mal or spyware
+- ANT catalog 
+    - leaked document of NSA’s hacking/spying toolset circa 2008
+- Ex: RF retro reflectors – targeted radio frequency (RF) activates device
+    - LOUDAUTO – record audio
+    - DATA - record keyboard strokes
+    - RAGEMASTER – watch your monitor, installed in wire
+    - JETPLOT – persists software implant, physical rootkit
+    - NIGHTSTAND – wifi cracker, can be put on drones
+    - IRATEMONK – software app persistence by implanting hard drive firmware
+    - Have to throw away entire computer to get rid of this malware
+    - MONKEYCALENDAR – SIM card
+    - CANDYGRAM – mimics cell tower network mGhz
+- Regulating encryption, legalize spying
+    - Kazakhstan’s encrypt laws, Brazil banning What’s APP for 48 hours, etc
+- Crypto wars in 90s – Clipper Chip
+    - Backdoor for gov’t access
+        - Weakens security
+
