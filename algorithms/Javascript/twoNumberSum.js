@@ -26,3 +26,21 @@ function twoSumNumbers(array, targetSum) {
 	}
 	return [];
 }
+
+// using indices on a sorted array: O(nlog(n)) time| O(1) space
+function sumTwoNumbers(array, targetSum) {
+	array.sort((a, b) => a - b);
+	let left = 0;
+	let right = array.length - 1;
+	while (left < right) {
+		let potentialMatch = array[left] + array[right];
+		if (targetSum === potentialMatch) {
+			return [array[left], array[right]];
+		} else if (targetSum > potentialMatch) {
+			left++;
+		} else if (targetSum < potentialMatch) {
+			right--;
+		}
+	}
+	return [];
+}
