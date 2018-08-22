@@ -7,3 +7,15 @@ def twoNumberSum(array, targetSum):
             if firstNum + secondNum == targetSum:
                 return sorted([firstNum, secondNum])
     return []
+
+# O(n) time | O(n) space
+def twoNumberSum2(array, targetSum):
+    nums = {}
+    for num in array:
+        potentialMatch = targetSum - num
+        if potentialMatch in nums:
+            return sorted([potentialMatch, num])
+        else: # store num in hash
+            nums[num] = True
+    return []
+# e.g. twoNumberSum([1, 4, 2, 6, 9], 11)
