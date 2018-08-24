@@ -19,3 +19,19 @@ def bstClosestValueHelper(BST, target, closest):
         return bstClosestValueHelper(BST.right, target, closest)
     else: # we found a value that is equal to target value
         return closest
+
+# Iterative
+# Average: O(Log(n)) Time | O(1) Space
+# Worst: O(n) Time | O(1) Space
+def bstClosestValueHelper(BST, target, closest):
+    currentNode = BST
+    while currentNode is not None: # while we're not at the bottom of the tree, at a leaf
+        if abs(target - closest) > abs(target - currentNode.value):
+            closest = currentNode.value
+        if target < currentNode.value: # explore left sub-tree
+            currentNode = currentNode.left
+        elif target > currentNode.value:
+            currentNode = currentNode.right
+        else:
+            break
+    return closest
