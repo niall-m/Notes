@@ -23,3 +23,26 @@ function bstClosestValue(bst, target, closest = Infinity) {
   }
   return closest;
 }
+
+// Recursive
+// Average: O(Log(n)) Time | O(Log(n)) Space
+// Worst: O(n) Time | O(n) Space
+function bstClosestValue2(bst, target) {
+  return bstHelper(bst, target, Infinity);
+}
+
+function bstHelper(bst, target, closest) {
+  if (bst === null) return closest;
+  if (Math.abs(target - closest) > Math.abs(target - bst.value)) {
+    closest = bst.value;
+  }
+  if (target < bst.value) {
+    return bstHelper(bst.left, target, closest);
+  } else if (target > bst.value) {
+    return bstHelper(bst.right, target, closest);
+  } else {
+    return closest;
+  }
+}
+
+// exports.bstClosestValue = bstClosestValue;
