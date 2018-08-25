@@ -23,4 +23,24 @@ class BST {
     }
     return this;
   }
+  
+  // Average: O(Log(n)) Time | O(Log(n)) Space
+  // Worst: O(n) Time | O(n) Space
+  contains(value) {
+    if (value < this.value) {
+      if (this.left === null) {
+        return false;
+      } else {
+        return this.left.contains(value);
+      }
+    } else if (value > this.value) {
+      if (this.right === null) {
+        return false;
+      } else {
+        return this.right.contains(value);
+      }
+    } else {
+      return true;
+    }
+  }
 }
