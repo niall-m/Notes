@@ -28,4 +28,20 @@ class BST {
     }
     return this; // allows chaining of .insert calls
   }
+
+  // Average: O(Log(n)) Time | O(1) Space
+  // Worst: O(n) Time | O(1) Space
+  contains(value) {
+    let currentNode = this;
+    while (currentNode !== null) {
+      if (value < currentNode.value) { // explore left
+        currentNode = currentNode.left;
+      } else if (value > currentNode.value) { // explore right
+        currentNode = currentNode.right;
+      } else { // we found the value
+        return true;
+      }
+    }
+    return false;
+  }
 }
