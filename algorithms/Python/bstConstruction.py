@@ -22,3 +22,16 @@ class BST:
                 else:
                     currentNode = currentNode.right
         return self # test bst.insert(1).insert(5)
+
+    # Average: O(Log(n)) time | O(1) space
+    # Worst: O(n) time | O(1) space
+    def contains(self, value):
+        currentNode = self
+        while currentNode is not None:
+            if value < currentNode.value:
+                currentNode = currentNode.left
+            elif value > currentNode.value:
+                currentNode = currentNode.right
+            else:
+                return True
+        return False
