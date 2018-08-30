@@ -18,3 +18,15 @@ class Node {
     return array; // returns the first dfs call
   }
 }
+
+// Alternate implementations of recursive step
+
+// this.children.forEach(child => {
+//   child.depthFirstSearch(array);
+// });
+
+// for (let i = 0; i < this.children.length; i++) {
+//   this.children[i].depthFirstSearch(array);
+// }
+
+// exports.Node = Node;
