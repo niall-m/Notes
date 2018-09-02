@@ -20,3 +20,17 @@ function nthFib2(n, memo = {1: 0, 2: 1}) { // initialize memo-hash with 2 base c
     return memo[n];
   }
 }
+
+// Iterative approach
+// O(n) Time | O(1) Space
+function nthFib3(n) {
+	let fibs = [0, 1]; // base case, first 2 nums in fib sequence
+	let counter = 3; // already have 2 in base case, starts by calculating the 3rd
+	while (counter <= n) {
+		let nextFib = fibs[0] + fibs[1]; // add current fibs to calculate next in sequence
+		fibs[0] = fibs[1]; // shift through sequence, replace first fib with second
+		fibs[1] = nextFib; // replace second fib with nextFib => [0, 1] => [1, 1] => [1, 2]
+		counter++;
+  }
+  return n > 1 ? fibs[1] : fibs[0]; // edgecase for nthFib(1)
+}
