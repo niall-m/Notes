@@ -39,3 +39,22 @@ function binarySearch2(array, target) {
     return subproblem === -1 ? -1 : subproblem + (middle + 1);
   }
 }
+
+// Iterative Binary Search
+// O(Log(n)) Time | O(1) Space
+function binarySearch3(array, target) {
+	let left = 0;
+	let right = array.length - 1;
+	while (left <= right) {
+		const middle = Math.floor((left + right) / 2);
+		const potentialMatch = array[middle];
+		if (target === potentialMatch) {
+			return middle;
+		} else if (target < potentialMatch) {
+			right = middle - 1;
+		} else {
+			left = middle + 1;
+		}
+	}
+	return -1;
+}
