@@ -16,3 +16,26 @@ function recursiveHelper(array, target, left, right) {
 		return recursiveHelper(array, target, left + 1, right);
 	}
 }
+
+// Recursive in place, without helper method
+// O(Log(n)) Time | O(Log(n)) Space
+function binarySearch2(array, target) {
+  if (array.length === 0) return -1; // base case: if array is empty, target wasn't found
+   // grab the middle number to search by; integer, not float
+   const middle = Math.floor(array.length / 2);
+   const potentialMatch = array[middle];
+  if (potentialMatch === target) { // if target is equal to middle element, great success
+    return middle;
+  } else if (target < potentialMatch) { // if target is smaller than mid, search left side
+    const left = array.slice(0, middle);
+    return binarySearch2(left, target);
+  } else { // target is bigger than middle, search right side
+    const right = array.slice(middle + 1);
+    const subproblem =  binarySearch2(right, target);
+    // if subproblem doesn't find target, it returns -1
+    // else, we must return the result of (subproblem + (mid + 1)) in order to
+    // return the index of the full array as it bubbles up the call stack
+    // due to the subarrays from Array.slice()
+    return subproblem === -1 ? -1 : subproblem + (middle + 1);
+  }
+}
