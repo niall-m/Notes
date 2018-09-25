@@ -15,3 +15,11 @@ function isPalindrome2(string) {
   }
   return string === reversed.join("");
 }
+
+// O(n) Time | O(n) Space
+// Recursive
+function isPalindrome3(string, i = 0) {
+  const j = string.length - 1 - i;
+  return i >= j ? true : string[i] === string[j] && isPalindrome3(string, i + 1);
+  // do the first and last letters match, and is everything in between a palindrome as well?
+}
