@@ -25,6 +25,7 @@ function isPalindrome3(string, i = 0) {
 }
 
 // O(n) Time | O(1) Space
+// Iterative with left & right pointers
 function isPalindrome4(string) {
   let startIdx = 0;
   let endIdx = string.length - 1;
