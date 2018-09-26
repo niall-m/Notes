@@ -11,4 +11,9 @@ def isPalindrome2(string):
     for i in reversed(range(len(string))):
         reversedChars.append(string[i])
     return string == "".join(reversedChars)
- 
+
+# O(n) Time | O(n) Space
+# Recursive
+def isPalindrome3(string, i = 0):
+    j = len(string) - 1 - i
+    return True if i >= j else string[i] == string[j] and isPalindrome3(string, i + 1)
