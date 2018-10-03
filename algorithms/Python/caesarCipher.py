@@ -10,7 +10,6 @@ def caesarCipher(string, key):
 # O(n) Time | O(n) Space
 def caesarCipher2(string, key):
     cipheredChars = []
-    newKey = key % 26
     for letter in string:
         charIdx = ord(letter) - ord("a")
         newCharIdx = (charIdx + key) % 26
