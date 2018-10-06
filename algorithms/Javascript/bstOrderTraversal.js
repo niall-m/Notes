@@ -31,3 +31,15 @@ function preOrderTraversal(tree, array) {
   }
   return array;
 }
+
+// O(n) Time| O(n) Space
+// left, right, root
+// e.g. 4 5 2 3 1
+function postOrderTraversal(tree, array) {
+  if (tree !== null) {
+    postOrderTraversal(tree.left, array);
+    postOrderTraversal(tree.right, array);
+    array.push(tree.value);
+  }
+  return array;
+}
