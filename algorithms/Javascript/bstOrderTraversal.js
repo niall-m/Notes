@@ -19,3 +19,15 @@ function inOrderTraversal(tree, array) {
   }
   return array;
 }
+
+// O(n) Time| O(n) Space
+// root, left, right
+// e.g. 1 2 4 5 3
+function preOrderTraversal(tree, array) {
+  if (tree !== null) {
+    array.push(tree.value);
+    preOrderTraversal(tree.left, array);
+    preOrderTraversal(tree.right, array);
+  }
+  return array;
+}
