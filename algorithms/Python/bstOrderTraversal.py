@@ -25,3 +25,13 @@ def preOrderTraversal(tree, array):
         inOrderTraversal(tree.left, array)
         inOrderTraversal(tree.right, array)
     return array
+
+# O(n) Time| O(n) Space
+# left, right, root
+# e.g. 4 5 2 3 1
+def postOrderTraversal(tree, array):
+    if tree is not None:
+        inOrderTraversal(tree.left, array)
+        inOrderTraversal(tree.right, array)
+        array.append(tree.value)
+    return array
