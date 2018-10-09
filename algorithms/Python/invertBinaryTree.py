@@ -12,3 +12,12 @@ def invertBinaryTree(tree):
 
 def swapLeaves(tree):
     tree.left, tree.right = tree.right, tree.left
+
+# O(n) Time | O(d) Space
+# Recursive
+def invertBinaryTree2(tree):
+    if tree is None:
+        return
+    tree.left, tree.right = tree.right, tree.left
+    invertBinaryTree2(tree.left)
+    invertBinaryTree2(tree.right)
