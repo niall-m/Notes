@@ -51,9 +51,9 @@ function binarySearch3(array, target) {
 		if (target === potentialMatch) {
 			return middle;
 		} else if (target < potentialMatch) {
-			right = middle - 1;
-		} else {
-			left = middle + 1;
+			right = middle - 1; // reassigns corresponding pointer from mid
+		} else { // cuts out half from consideration
+			left = middle + 1; // creating logarithmic time complexity
 		}
 	}
 	return -1;

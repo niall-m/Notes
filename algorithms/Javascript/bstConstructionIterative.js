@@ -79,7 +79,7 @@ class BST {
           // reassign parent's left child to proper child of currentNode; left has priority over right to maintain BST
         } else if (parentNode.right === currentNode) { // currentNode is a right child
           parentNode.right = currentNode.left !== null ? currentNode.left : currentNode.right;
-          // reassign parent's right child with same logic
+          // reassign parent's right child with same logic, currentNode gets garbage collected
           // note: if there is no right child, it will assign null from constructor
         }
         break;
@@ -89,7 +89,7 @@ class BST {
   }
 
   findMinValue() { // is called on right sub-tree
-    // traverse tree to the left until we reach the end, i.e. a node with no left value
+    // traverse tree to the left until we reach a node with no left value, i.e. leaf
     let currentNode = this;
     while (currentNode.left !== null) {
       currentNode = currentNode.left;

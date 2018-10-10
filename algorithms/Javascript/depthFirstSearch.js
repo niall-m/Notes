@@ -15,7 +15,7 @@ class Node {
     for (let child of this.children) { // loops through and assigns variable to each child from this.children array
       child.depthFirstSearch(array); // recursively call dfs on children, adding each to call stack
     } // reaches leaf of tree before bubbling up call stack
-    return array; // returns the first dfs call
+    return array;
   }
 }
 
@@ -28,5 +28,3 @@ class Node {
 // for (let i = 0; i < this.children.length; i++) {
 //   this.children[i].depthFirstSearch(array);
 // }
-
-// exports.Node = Node;
