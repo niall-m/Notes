@@ -5,11 +5,20 @@ class DoubleLinkedList {
   }
 
   setHead(node) {
-		
-	}
+		if (this.head === null) {
+			this.head = node;
+			this.tail = node;
+			return;
+		}
+		this.insertBefore(this.head, node);
+  }
 
   setTail(node) {
-
+		if (this.tail === null) {
+			this.setHead(node);
+			return;
+		}
+		this.insertAfter(this.tail, node);
   }
 
   insertBefore(node, nodeToInsert) {
