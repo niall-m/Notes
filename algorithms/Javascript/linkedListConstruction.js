@@ -13,7 +13,16 @@ class DoubleLinkedList {
   }
 
   insertBefore(node, nodeToInsert) {
-
+		if (nodeToInsert === this.head && nodeToInsert === this.tail) return;
+		this.remove(nodeToInsert);
+		nodeToInsert.prev = node.prev;
+		nodeToInsert.next = node;
+		if (node.prev === null) {
+			this.head = nodeToInsert;
+		} else {
+			node.prev.next = nodeToInsert;
+		}
+		node.prev = nodeToInsert;
   }
 
   insertAfter(node, nodeToInsert) {
