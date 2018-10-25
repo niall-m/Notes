@@ -25,8 +25,13 @@ class DoubleLinkedList {
   }
 
   removeNodesWithValue(value) {
-
-	}
+		let node = this.head;
+		while (node !== null) {
+			let targetNode = node;
+			node = node.next;
+			if (targetNode.value === value) this.remove(targetNode);
+		}
+  }
 	
   remove(node) {
 		if (node === this.head) this.head = this.head.next;
