@@ -18,8 +18,13 @@ class DoublyLinkedList:
     def insertAtPosition(self, position, nodeToInsert):
         pass
 
-    def removeNodesWithValue(self, value):
-        pass
+    def removeNodesWithValue(self, value): # search and remove
+        node = self.head
+        while node is not None: # not at end of linked list
+            targetNode = node # create temp variable in case node pointers are removed
+            node = node.next
+            if targetNode.value == value:
+                self.remove(targetNode)
 
     def remove(self, node):
         if node == self.head: # are we dealing with head or tail?
