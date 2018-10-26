@@ -8,12 +8,31 @@ class DoublyLinkedList:
 
     def setTail(self, node):
         pass
-
+        
     def insertBefore(self, node, nodeToInsert):
-        pass
-
+        # if we're dealing with linkedlist that only has 1 node, then there's nothing to insert
+        if nodeToInsert == self.head and nodeToInsert == self.tail:
+            return # no op
+        self.remove(nodeToInsert) # if node is in list, gotta remove it
+        nodeToInsert.prev = node.prev
+        nodeToInsert.next = node
+        if node.prev is None: # if inserting before head
+            self.head = nodeToInsert
+        else:
+            node.prev.next = nodeToInsert
+        node.prev = nodeToInsert
+    
     def insertAfter(self, node, nodeToInsert):
-        pass    
+        if nodeToInsert == self.head and nodeToInsert == self.tail:
+            return
+        self.remove(nodeToInsert)
+        nodeToInsert.next = node.next
+        nodeToInsert.prev = node
+        if node.next is None: # if inserting after tail
+            self.tail = nodeToInsert
+        else:
+            node.next.prev = nodeToInsert
+        node.next = nodeToInsert
 
     def insertAtPosition(self, position, nodeToInsert):
         pass
