@@ -4,11 +4,18 @@ class DoublyLinkedList:
         self.tail = None
 
     def setHead(self, node):
-        pass
-
+        if self.head is None: # empty list
+            self.head = node
+            self.tail = node
+            return
+        self.insertBefore(self.head, node)
+    
     def setTail(self, node):
-        pass
-        
+        if self.tail is None:
+            self.setHead(node)
+            return
+        self.insertAfter(self.tail, node)
+
     def insertBefore(self, node, nodeToInsert):
         # if we're dealing with linkedlist that only has 1 node, then there's nothing to insert
         if nodeToInsert == self.head and nodeToInsert == self.tail:
